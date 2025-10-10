@@ -78,7 +78,7 @@ const Footer = () => {
                 <Instagram size={20} />
               </a>
               <a 
-                href="https://www.tiktok.com/@fakearabshawarmastation" 
+                href="" 
                 className="w-10 h-10 rounded-full bg-background/10 hover:bg-primary flex items-center justify-center transition-colors"
                 aria-label="Twitter"
               >
