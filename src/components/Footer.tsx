@@ -26,7 +26,8 @@ const Footer = () => {
                 <h4 className="font-semibold mb-2">MALL PALACE</h4>
                 <div className="flex items-start gap-2 text-background/80 text-sm mb-2">
                   <MapPin size={16} className="mt-1 flex-shrink-0" />
-                  <span>Mall Manila, Dioza 1546</span>
+                  <span>456 Shopping Center Blvd</span>
+                  <span>Mall District, State 12346</span>
                 </div>
                 <div className="flex items-center gap-2 text-background/80 text-sm">
                   <Phone size={16} />
@@ -59,25 +60,25 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-6 text-primary">Join the Royal Court</h3>
             <p className="text-background/80 mb-4 text-sm">
-              Royal subjects know all our exclusive deals, secret announcements, and more!
+              Follow the KING for exclusive deals, royal announcements, and delicious content!
             </p>
             <div className="flex gap-4">
               <a 
-                href="#" 
+                href="https://www.facebook.com/FakeArabShawarmaStation/" 
                 className="w-10 h-10 rounded-full bg-background/10 hover:bg-primary flex items-center justify-center transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook size={20} />
               </a>
               <a 
-                href="#" 
+                href="https://www.instagram.com/fakearabshawarmastation/" 
                 className="w-10 h-10 rounded-full bg-background/10 hover:bg-primary flex items-center justify-center transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram size={20} />
               </a>
               <a 
-                href="#" 
+                href="https://www.tiktok.com/@fakearabshawarmastation" 
                 className="w-10 h-10 rounded-full bg-background/10 hover:bg-primary flex items-center justify-center transition-colors"
                 aria-label="Twitter"
               >
