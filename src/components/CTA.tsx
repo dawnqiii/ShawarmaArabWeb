@@ -9,28 +9,28 @@ const CTA = () => {
   };
 
   return (
-    <section className="py-16 md:py-24 bg-primary">
+    <section className="py-16 md:py-24 bg-secondary">
       <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl md:text-5xl font-bold text-secondary mb-6">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-background mb-6">
             Ready for Something Amazing?
           </h2>
-          <p className="text-lg md:text-xl text-secondary/80 mb-8">
+          <p className="text-lg md:text-xl text-background/90 mb-10 leading-relaxed max-w-2xl mx-auto">
             Experience the difference that quality and passion make. Join the Shawarma Arab family today!
           </p>
 
           <div className="flex flex-wrap justify-center gap-4">
-            <Button 
+            <Button
               onClick={() => scrollToSection('menu')}
               variant="secondary"
-              className="bg-secondary text-background hover:bg-secondary/90 font-semibold px-8 py-6 text-lg"
+              className="bg-primary text-secondary hover:bg-primary/90 font-semibold px-10 py-7 text-lg shadow-xl hover:shadow-2xl transition-all hover:scale-105"
             >
               View Menu
             </Button>
-            <Button 
+            <Button
               onClick={() => scrollToSection('location')}
               variant="outline"
-              className="border-2 border-secondary text-secondary hover:bg-secondary hover:text-primary font-semibold px-8 py-6 text-lg"
+              className="border-2 border-background text-background hover:bg-background hover:text-secondary font-semibold px-10 py-7 text-lg shadow-lg hover:shadow-xl transition-all hover:scale-105"
             >
               Visit Us
             </Button>

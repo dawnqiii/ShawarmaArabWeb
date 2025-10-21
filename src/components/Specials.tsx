@@ -23,11 +23,11 @@ const Specials = () => {
     <section id="about" className="py-16 md:py-24 bg-primary">
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-5xl font-bold text-secondary mb-4">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-secondary mb-4">
             What Makes Us Special
           </h2>
-          <p className="text-lg text-secondary/80">
+          <p className="text-lg md:text-xl text-secondary/80 max-w-2xl mx-auto">
             Experience the perfect blend of authentic flavors and modern convenience 🌟
           </p>
         </div>
@@ -37,20 +37,20 @@ const Specials = () => {
           {features.map((feature, index) => {
             const Icon = feature.icon;
             return (
-              <div 
+              <div
                 key={index}
-                className="bg-background rounded-2xl p-8 text-center hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+                className="bg-background rounded-3xl p-10 text-center hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 group"
               >
                 {/* Icon */}
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-secondary rounded-full mb-6">
-                  <Icon className="text-primary" size={32} />
+                <div className="inline-flex items-center justify-center w-20 h-20 bg-secondary rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                  <Icon className="text-primary" size={36} />
                 </div>
 
                 {/* Title */}
-                <h3 className="text-2xl font-bold mb-3">{feature.title}</h3>
+                <h3 className="text-2xl font-bold mb-4 group-hover:text-primary transition-colors">{feature.title}</h3>
 
                 {/* Description */}
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground leading-relaxed text-base">
                   {feature.description}
                 </p>
               </div>

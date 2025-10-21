@@ -5,7 +5,7 @@ const Footer = () => {
     <footer id="location" className="bg-secondary text-background py-12 md:py-16">
       <div className="container mx-auto px-4">
         {/* Main Footer Content */}
-        <div className="grid md:grid-cols-3 gap-8 md:gap-12 mb-8">
+        <div className="grid md:grid-cols-3 gap-8 md:gap-12 mb-10">
           {/* Our Kingdom */}
           <div>
             <h3 className="text-xl font-bold mb-6 text-primary">Our Kingdom</h3>
@@ -63,26 +63,26 @@ const Footer = () => {
               Follow the KING for exclusive deals, royal announcements, and delicious content!
             </p>
             <div className="flex gap-4">
-              <a 
-                href="https://www.facebook.com/FakeArabShawarmaStation/" 
-                className="w-10 h-10 rounded-full bg-background/10 hover:bg-primary flex items-center justify-center transition-colors"
+              <a
+                href="https://www.facebook.com/FakeArabShawarmaStation/"
+                className="w-12 h-12 rounded-xl bg-background/15 hover:bg-primary flex items-center justify-center transition-all hover:scale-110 shadow-md hover:shadow-lg"
                 aria-label="Facebook"
               >
-                <Facebook size={20} />
+                <Facebook size={22} />
               </a>
-              <a 
-                href="https://www.instagram.com/fakearabshawarmastation/" 
-                className="w-10 h-10 rounded-full bg-background/10 hover:bg-primary flex items-center justify-center transition-colors"
+              <a
+                href="https://www.instagram.com/fakearabshawarmastation/"
+                className="w-12 h-12 rounded-xl bg-background/15 hover:bg-primary flex items-center justify-center transition-all hover:scale-110 shadow-md hover:shadow-lg"
                 aria-label="Instagram"
               >
-                <Instagram size={20} />
+                <Instagram size={22} />
               </a>
-              <a 
-                href="" 
-                className="w-10 h-10 rounded-full bg-background/10 hover:bg-primary flex items-center justify-center transition-colors"
+              <a
+                href=""
+                className="w-12 h-12 rounded-xl bg-background/15 hover:bg-primary flex items-center justify-center transition-all hover:scale-110 shadow-md hover:shadow-lg"
                 aria-label="Twitter"
               >
-                <Twitter size={20} />
+                <Twitter size={22} />
               </a>
             </div>
           </div>
