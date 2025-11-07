@@ -30,7 +30,7 @@ const CTA = () => {
             <Button
               onClick={() => scrollToSection('location')}
               variant="outline"
-              className="border-2 border-background text-background hover:bg-background hover:text-secondary font-semibold px-10 py-7 text-lg shadow-lg hover:shadow-xl transition-all hover:scale-105"
+              className="border-2 border-primary bg-transparent text-primary hover:bg-primary hover:text-secondary font-semibold px-10 py-7 text-lg shadow-lg hover:shadow-xl transition-all hover:scale-105"
             >
               Visit Us
             </Button>

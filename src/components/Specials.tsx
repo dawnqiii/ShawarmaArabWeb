@@ -1,35 +1,67 @@
 import { Star, Zap, Heart } from 'lucide-react';
+import aboutImage from '@/assets/about.jpg';
 
 const features = [
   {
     icon: Star,
-    title: 'Premium Quality',
-    description: 'We use only the finest ingredients and authentic spices to create unforgettable flavors'
+    title: 'Our Belief',
+    description: 'At FakeArab Shawarma Station, we believe in food that connects cultures and creates conversation. By fusing bold Arabic flavors with Filipino soul, we serve shawarma that\'s not just big in size, but big in flavor and heart.'
   },
   {
     icon: Zap,
-    title: 'Lightning Fast',
-    description: 'Quick preparation without compromising quality. Fresh, hot, and ready when you are'
+    title: 'Our Experience',
+    description: 'It\'s not just food — it\'s a family-made experience worth remembering. Every bite reflects the warmth, creativity, and shared joy of our kitchen.'
   },
   {
     icon: Heart,
-    title: 'Community Love',
-    description: 'Great food is meant to be shared. Join our family of food lovers and create memories'
+    title: 'Our Philosophy',
+    description: 'Rooted in family, driven by creativity, and inspired by tradition, our philosophy is simple: "Feed people not just with food but with joy, curiosity, and something worth remembering."'
   }
 ];
 
 const Specials = () => {
   return (
-    <section id="about" className="py-16 md:py-24 bg-primary">
-      <div className="container mx-auto px-4">
-        {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-secondary mb-4">
-            What Makes Us Special
+    <section id="about" className="py-20 md:py-28 bg-primary scroll-mt-24">
+      <div className="container mx-auto px-4 max-w-7xl">
+        {/* About Us Header */}
+        <div className="text-center mb-20">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-secondary mb-4 tracking-tight">
+            About Us
           </h2>
-          <p className="text-lg md:text-xl text-secondary/80 max-w-2xl mx-auto">
-            Experience the perfect blend of authentic flavors and modern convenience 🌟
-          </p>
+        </div>
+
+        {/* Joy is best when shared Section */}
+        <div className="grid md:grid-cols-2 gap-16 items-center mb-28">
+          {/* Left Content */}
+          <div className="space-y-8">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight max-w-xl">
+              <span className="text-secondary">Cravings mo?</span><br />
+              <span className="text-white">FakeArab Shawarma mo na 'yan!</span>
+            </h2>
+            <p className="text-base md:text-lg text-secondary/90 leading-relaxed">
+              welcome to FakeArab Shawarma Station a proudly family-owned business that's redefining the shawarma experience in the Philippines. What started as a small food venture quickly grew into a local sensation, going viral for one simple reason: our shawarma is like no other. At FakeArab Shawarma Station, every bite tells a story of family, culture, and a shared passion for food that brings people together. Whether you're craving something new or simply hungry for something huge, we've got your shawarma fix.
+            </p>
+            <p className="text-base md:text-lg text-secondary/90 leading-relaxed">
+              In each market we call home, we serve up our great tasting food with the warm and friendly service we have come to be known for.
+            </p>
+          </div>
+
+          {/* Right Image */}
+          <div className="relative group">
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+              <img
+                src={aboutImage}
+                alt="Sharing joy with food"
+                className="w-full h-[450px] md:h-[550px] object-cover transform group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+          </div>
+        </div>
+        {/* Section Header */}
+        <div className="text-center mb-20">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-secondary mb-6 tracking-tight">
+            Our Philosophy
+          </h2>
         </div>
 
         {/* Features Grid */}
@@ -56,6 +88,21 @@ const Specials = () => {
               </div>
             );
           })}
+        </div>
+
+        {/* Vision for the Future */}
+        <div className="mt-32 mb-8">
+          <div className="max-w-5xl mx-auto text-center space-y-8">
+            <div className="inline-block">
+              <h2 className="text-2xl md:text-3xl font-semibold text-secondary/80 tracking-wide uppercase mb-8">
+                Vision for the Future
+              </h2>
+              <div className="h-1 w-24 bg-secondary mx-auto"></div>
+            </div>
+            <blockquote className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight max-w-4xl mx-auto">
+              "To be one of the known shawarma business in the whole world"
+            </blockquote>
+          </div>
         </div>
       </div>
     </section>

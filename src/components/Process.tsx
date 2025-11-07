@@ -1,6 +1,6 @@
 import { CheckCircle2, Leaf, Flame } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
-import processImage from '@/assets/process.jpg';
+import processImage from '@/assets/patagilid.jpg';
 
 const processSteps = [
   { icon: CheckCircle2, text: 'Premium cuts of meat' },

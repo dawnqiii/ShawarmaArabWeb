@@ -1,60 +1,60 @@
 import { Badge } from '@/components/ui/badge';
-import chixBowl from '@/assets/chix-bowl.jpg';
-import beefBowl from '@/assets/beef-bowl.jpg';
-import mixedWrap from '@/assets/mixed-wrap.jpg';
-import falafelBowl from '@/assets/falafel-bowl.jpg';
+import chixBowl from '@/assets/chickarab.jpg';
+import beefBowl from '@/assets/beefshawarmabowl.jpg';
+import mixedWrap from '@/assets/chickenshawarma.jpg';
+import falafelBowl from '@/assets/beefshawarma.jpg';
 
 const dishes = [
   {
-    name: 'Chix Arab Bowl',
-    description: 'Tender grilled chicken with authentic spices served in a bowl',
-    price: '₱260',
+    name: 'Chix Arab Bowl Jr.',
+    description: 'Our Chix Arab Shawarma Bowl Version JR — Fries, Pickles, Cabbage, Tomato, Onion, Marinated Chicken, and Ketchup with our Signature Sauces.',
+    price: '₱259',
     image: chixBowl,
     tags: ['Halal', 'Protein Rich']
   },
   {
-    name: 'Beef Arab Bowl',
-    description: 'Premium beef with traditional seasoning in a delicious bowl',
-    price: '₱280',
+    name: 'Beef Arab Bowl Jr.',
+    description: 'Our Beef Arab Shawarma Bowl Version JR — Fries, Pickles, Cabbage, Tomato, Onion, Ground Beef, and Ketchup with our Signature Sauces.',
+    price: '₱279',
     image: beefBowl,
     tags: ['Halal', 'Premium']
   },
   {
-    name: 'Mixed Shawarma Wrap',
-    description: 'Perfect blend of beef and chicken wrapped in soft pita',
-    price: '₱300',
+    name: 'Chix Shawawrma Pita',
+    description: 'Our Famous Chix Shawarma Pita – Pita, Cabbage, Cucumber, Tomato, Onion, Shredded Chicken, and Signature Sauces.',
+    price: '₱169',
     image: mixedWrap,
     tags: ['Halal', 'Best Seller']
   },
   {
-    name: 'Falafel Veggie Bowl',
-    description: 'Crispy falafel with fresh veggies and creamy tahini sauce',
-    price: '₱250',
+    name: 'Beef Shawawrma Pita',
+    description: 'Our Famous Beef Shawarma Pita – Pita, Cabbage, Cucumber, Tomato, Onion, Ground Beef, and Signature Sauces.',
+    price: '₱189',
     image: falafelBowl,
-    tags: ['Vegetarian', 'Healthy']
+    tags: ['Halal', 'Premium']
   }
 ];
 
 const Dishes = () => {
   return (
-    <section id="menu" className="py-16 md:py-24 bg-background">
-      <div className="container mx-auto px-4">
+    <section id="menu" className="py-20 md:py-28 bg-background scroll-mt-24">
+      <div className="container mx-auto px-4 max-w-7xl">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 text-secondary">
+        <div className="text-center mb-20">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-secondary tracking-tight">
             Our Signature Dishes
           </h2>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-            Authentic flavors that made us famous 🌯
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            If you want to order, go to our place and go to our social for more
           </p>
         </div>
 
         {/* Dishes Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10 justify-items-center">
           {dishes.map((dish, index) => (
             <div
               key={index}
-              className="group bg-card rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 border border-border/50"
+              className="group bg-card rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 border border-border/50 w-full max-w-sm"
             >
               {/* Image */}
               <div className="relative h-64 overflow-hidden bg-muted">

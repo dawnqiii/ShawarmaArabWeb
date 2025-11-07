@@ -11,10 +11,20 @@ const Index = () => {
     <div className="min-h-screen">
       <Navbar />
       <Hero />
+      {/* Buffer space matching Menu section color */}
+      <div className="h-24 bg-background"></div>
       <Dishes />
+      {/* Buffer space matching About section color */}
+      <div className="h-24 bg-primary"></div>
       <Specials />
+      {/* Buffer space matching Process section color */}
+      <div className="h-24 bg-background"></div>
       <Process />
+      {/* Buffer space matching CTA section color */}
+      <div className="h-24 bg-secondary"></div>
       <CTA />
+      {/* Buffer space matching Location section color */}
+      <div className="h-24 bg-secondary"></div>
       <Footer />
     </div>
   );
